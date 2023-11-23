@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Button_click : MonoBehaviour
 {
-    [SerializeField] int score;
+    [SerializeField] public static int score;
     public Text scoreText;
 
     public void click()
