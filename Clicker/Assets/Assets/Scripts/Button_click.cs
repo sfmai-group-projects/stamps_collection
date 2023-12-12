@@ -5,12 +5,18 @@ using UnityEngine.UI;
 
 public class Button_click : MonoBehaviour
 {
-    [SerializeField] public static int score;
+    [SerializeField] int score;
     public Text scoreText;
+
+    private void Start()
+    {
+       score = PlayerPrefs.GetInt("score");
+    }
 
     public void click()
     {
         score++;
+        PlayerPrefs.SetInt("score", score);
     }
 
     // Update is called once per frame

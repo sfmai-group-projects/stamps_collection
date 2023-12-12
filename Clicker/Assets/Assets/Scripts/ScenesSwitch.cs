@@ -5,13 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class ScenesSwitch : MonoBehaviour
 {
-  public void OpenMenu()
-    {
-        SceneManager.LoadScene("MainMenuScene");
-    }
+    //private void Start()
+    //{
+    //    SceneManager.LoadScene(1);
+    //}
 
     public void OpenClick()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(1);
+    }
+
+    public void OpenMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void Achievements()
+    {
+        SceneManager.LoadScene(2);
     }
 }
